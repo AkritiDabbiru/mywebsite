@@ -1,0 +1,57 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Test</title>
+    <script>
+        function calcResult(){
+            var score=0;
+            if(document.getElementById("q1option1").checked){
+                score+=2;
+            }
+            if(document.getElementById("q2option2").checked){
+                score+=2;
+            }
+            document.getElementById("totalscore").innerHTML=parseInt(score);
+        }
+    </script>
+</head>
+<body>
+    <div class="examform">
+        <h2>Multiple Choice Questions (2 Marks Each)</h2>
+        <form>
+            <p>1. JS is</p>
+            <input type="radio" name="q1" id="q1option1">
+            <label for="option1">Used for creating dynamic web page</label> <br>
+            <input type="radio" name="q1" id="q1option2">
+            <label for="option2">Used to create static web page</label> <br>
+            <input type="radio" name="q1" id="q1option3">
+            <label for="option3">All</label> <br>
+            <input type="radio" name="q1" id="q1option4">
+            <label for="option4">None of these</label>
+ <br> <br>
+            <p>2. Node JS is used for</p>
+            <input type="radio" name="q2" id="q2option1">
+            <label for="option1">Creating client side application</label> <br> 
+            <input type="radio" name="q2" id="q2option2">
+            <label for="option2">Creating server side application</label> <br> 
+            <input type="radio" name="q2" id="q2option3">
+            <label for="option3">All</label> <br> 
+            <input type="radio" name="q2" id="q2option4">
+            <label for="option4">None of these</label>
+<br> <br>
+
+<input type="button" onclick="return calcResult()" value="Submit"> <br> <br>
+            <div class="result">
+                <label for="result">Result:</label>
+                <p id="totalscore"></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+</body>
+</html>
