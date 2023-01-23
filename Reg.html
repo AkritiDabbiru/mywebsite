@@ -1,0 +1,87 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #alert-div{
+            visibility: hidden;
+            background-color: paleturquoise;
+            border: 1px solid purple;
+            padding: 2px;
+            width: 50%;
+            border-radius: 5px;
+        }
+        #alert {
+            color: #fff;
+            font-size: 15px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+
+<section>
+    <!-- <article class="content1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis ut culpa at! Expedita at magni natus delectus maxime alias, libero dolorem, repellendus totam odio soluta eius nam aspernatur inventore animi.
+    </article>
+    <br>
+    <article class="content2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis ut culpa at! Expedita at magni natus delectus maxime alias, libero dolorem, repellendus totam odio soluta eius nam aspernatur inventore animi.
+    </article> -->
+ 
+    <div class="container">
+     <h3>Registration for LVC</h3>
+     <div id="alert-div">
+        <p id="alert"></p>
+     </div>
+        <form name="reg" onsubmit="return validateForm()">
+          <label for="fname"> Name</label>
+          <input  type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label >Gender: </label><input type="radio" name="gender" value="male"> Male
+            <input  type="radio" name="gender" value="female"> Female
+
+
+                <br><br>
+                <label for="email"> Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email.."> <br>
+                    <label for="course">Course Required:</label>
+                    <select id="courses" name="courses">
+                        <option value="Select One">Select</option>
+                        <option value="mean">MEAN</option>
+                        <option value="mern">MERN</option>
+                        <option value="devops">DEVOPS</option>
+                    </select>
+                    <!-- <label>Software Knowledge</label><br>
+                    <input type="checkbox" id="skill1" name="skill1" value="figma">
+            <label for="skill1"> Figma</label><br>
+            <input type="checkbox" id="skill2" name="skill2" value="photoshop">
+            <label for="skill2"> Photoshop</label><br>
+            <input type="checkbox" id="skill3" name="skill3" value="illustrator">
+            <label for="skill3"> Illustrator</label><br><br> -->
+             <label for="subject">Other Requirements</label><br>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      <br>
+          <input type="submit" value="Submit">
+          <p style="color: green;" id="alert-success"></p>
+        </form>
+      </div>
+      
+      
+    
+</section>
+
+</body>
+<script src="./js/valid1.js">
+  
+</script>
+</html>
